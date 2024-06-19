@@ -5,11 +5,11 @@ export default {
     extend: {
       colors: {
         primary: {
-          100: "#D1FAE5",
-          DEFAULT: "#10B981",
+          500: "#f1472d",
+          DEFAULT: "#EB715D",
         },
         secondary: {
-          DEFAULT: "#1B1C57",
+          DEFAULT: "#604CC3",
           500: "#626687",
           700: "#1B1C57",
         },
@@ -18,7 +18,12 @@ export default {
           500: "#626687",
           700: "#1B1C57",
         },
-        third: "#F59E0B",
+      
+        third: {
+          DEFAULT: "#1F2937",
+          500: "#626687",
+          700: "#1B1C57",
+        },
         base: "#fff",
       },
     },

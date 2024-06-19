@@ -4,9 +4,9 @@ import Home from "../Pages/home/Home";
 import Login from "../Pages/login/Login";
 import Signup from "../Pages/signup/Signup";
 import About from "../Pages/about/About";
-import Shop from "../Pages/shop/Shop";
 import Blog from "../Pages/blog/Blog";
 import Contact from "../Pages/contact/Contact";
+import Notice from "../Pages/notice/Notice";
 
 export const router = createBrowserRouter([
     {
@@ -24,8 +24,8 @@ export const router = createBrowserRouter([
           // loader: () => fetch("http://localhost:3000/about"),
         },
         {
-          path: "/shop",
-          element: <Shop />,
+          path: "/notice",
+          element: <Notice />,
           // loader: () => fetch("http://localhost:3000/shop"),
         },
         {
