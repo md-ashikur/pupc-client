@@ -4,9 +4,11 @@ import Home from "../Pages/home/Home";
 import Login from "../Pages/login/Login";
 import Signup from "../Pages/signup/Signup";
 import About from "../Pages/about/About";
-import Blog from "../Pages/blog/Blog";
 import Contact from "../Pages/contact/Contact";
 import Notice from "../Pages/notice/Notice";
+import Alumni from "../Pages/alumni/Alumni";
+import Events from "../Pages/events/Events";
+import Committee from "../Pages/Committee/Committee";
 
 export const router = createBrowserRouter([
     {
@@ -29,8 +31,18 @@ export const router = createBrowserRouter([
           // loader: () => fetch("http://localhost:3000/shop"),
         },
         {
-          path: "/blog",
-          element: <Blog />,
+          path: "/events",
+          element: <Events />,
+          // loader: () => fetch("http://localhost:3000/shop"),
+        },
+        {
+          path: "/committee",
+          element: <Committee />,
+          // loader: () => fetch("http://localhost:3000/blog"),
+        },
+        {
+          path: "/alumni",
+          element: <Alumni />,
           // loader: () => fetch("http://localhost:3000/blog"),
         },
         {

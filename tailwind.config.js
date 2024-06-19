@@ -22,7 +22,7 @@ export default {
         third: {
           DEFAULT: "#1F2937",
           500: "#626687",
-          700: "#1B1C57",
+          700: "#F1F5F9",
         },
         base: "#fff",
       },

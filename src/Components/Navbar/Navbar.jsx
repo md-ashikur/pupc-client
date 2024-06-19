@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaPhoneVolume, FaTimes } from 'react-icons/fa';
 import { FaCaretDown } from "react-icons/fa";
 import pupc from "../../images/pupc.png";
 import { NavLink } from 'react-router-dom';
 import "./Navbar.css"
+import { MdOutlineAlternateEmail } from 'react-icons/md';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,8 +28,8 @@ const Navbar = () => {
       {/* Subnav with contact info */}
       <div className="bg-gray-800 text-white py-1">
         <div className="container mx-auto flex justify-between items-center px-4">
-          <span>Phone: (123) 456-7890</span>
-          <span>Email: example@example.com</span>
+          <span className='flex items-center gap-2'><FaPhoneVolume /> (123) 456-7890</span>
+          <span className='flex items-center gap-2'><MdOutlineAlternateEmail /> programmingclub.pub@gmail.com</span>
         </div>
       </div>
 
@@ -46,24 +47,24 @@ const Navbar = () => {
                 <NavLink to="/notice" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900">Notice</NavLink>
 
                 <div className="relative">
-                  <NavLink to='' onClick={handleSubmenuToggle} className="px-3 py-2 flex items-center gap-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 focus:outline-none">
+                  <button onClick={handleSubmenuToggle} className="px-3 py-2 flex items-center gap-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 focus:outline-none">
                    Archive <FaCaretDown/>
-                  </NavLink>
+                  </button>
                   {isSubmenuOpen && (
                     <div className="absolute mt-2 py-2 w-48 bg-white rounded-md shadow-xl">
-                      <NavLink to="/news" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">News & Events</NavLink>
+                      <NavLink to="/events" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">News & Events</NavLink>
                       <NavLink to="/achievements" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Achievements</NavLink>
                       <NavLink to="/gallery" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Gallery</NavLink>
                     </div>
                   )}
                 </div>
+                <NavLink to="/committee" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900">Committee</NavLink>
                 <NavLink to="/alumni" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900">Our Alumni</NavLink>
                 <NavLink to="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900">Contact</NavLink>
+                <NavLink to="/login" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900">Login</NavLink>
               </div>
 
-              <div>
-              <NavLink to="/login" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900">Login</NavLink>
-              </div>
+             
             </div>
             <div className="flex md:hidden">
               <button onClick={handleMenuToggle} className="text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900">
@@ -87,20 +88,24 @@ const Navbar = () => {
              
                 <NavLink to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</NavLink>
                 <NavLink to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</NavLink>
-                <NavLink to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Services</NavLink>
+                <NavLink to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Notice</NavLink>
                 <NavLink to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</NavLink>
                 <div>
-                  <button onClick={handleSubmenuToggle} className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                    More
-                  </button>
+                  <NavLink to={"/archive"} onClick={handleSubmenuToggle} className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                    Archive <FaCaretDown/>
+                  </NavLink>
                   {isSubmenuOpen && (
                     <div className="pl-4">
-                      <NavLink to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Option 1</NavLink>
-                      <NavLink to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Option 2</NavLink>
-                      <NavLink to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Option 3</NavLink>
+                      <NavLink to="/event" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">News & Events</NavLink>
+                      <NavLink to="/achievements" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Achievements</NavLink>
+                      <NavLink to="/gallery" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Gallery</NavLink>
                     </div>
                   )}
                 </div>
+                <NavLink to="/committee" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Committee</NavLink>
+                <NavLink to="/alumni" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our Alumni</NavLink>
+                <NavLink to="/contact" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</NavLink>
+                <NavLink to="/login" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Login</NavLink>
 
               </div>
               <div className="relative h-screen md:hidden inset-0 bg-black opacity-50" onClick={handleCloseMenu}></div>
