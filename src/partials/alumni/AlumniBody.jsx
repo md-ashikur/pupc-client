@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import ashik from "../../images/ashik.jpg";
+import "./Alumni.css";
+
 const alumniData = [
   { img: {ashik}, name: 'Md. Ashikur Rahman', dept: 'CSE', batch: '20th', companyName: 'TOTO Company ', designation: 'Bekar Web Developer' },
-  { img: 'img2.jpg', name: 'Ashik 2', dept: 'Dept 2', batch: 'Batch 2', companyName: 'Company 2', designation: 'Designation 2' },
+  { img: 'img2.jpg', name: 'Nur Mohammad Arafat Khan', dept: 'Dept 2', batch: 'Batch 2', companyName: 'Company 2', designation: 'Designation 2' },
   { img: 'img3.jpg', name: 'Alumni 3', dept: 'Dept 3', batch: 'Batch 3', companyName: 'Company 3', designation: 'Designation 3' },
   { img: 'img4.jpg', name: 'Alumni 4', dept: 'Dept 4', batch: 'Batch 4', companyName: 'Company 4', designation: 'Designation 4' },
   { img: 'img5.jpg', name: 'Alumni 5', dept: 'Dept 5', batch: 'Batch 5', companyName: 'Company 5', designation: 'Designation 5' },
@@ -71,7 +73,7 @@ const AlumniBody = () => {
 
   return (
     <div className="lg:mx-20 mx-5 py-8">
-      <h1 className="text-2xl font-bold mb-4 text-center">Our Alumni</h1>
+      <h1 className="text-2xl font-bold mb-4 text-white text-center">Our Alumni</h1>
       <input
         type="text"
         placeholder="Search by name, batch, or company"
@@ -79,18 +81,18 @@ const AlumniBody = () => {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <hr className='my-6 bg-primary-500 h-1' />
-      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <hr className='my-6 h-1' />
+      <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
         {currentAlumni.map((alumni, index) => (
-          <div key={index} className="bg-white p-4 flex justify-center items-center flex-col text-center shadow rounded-md">
-           <div className='w-52 h-52 flex justify-center items-center overflow-hidden rounded-full'>
+          <div key={index} className="alumni-card p-2 flex  items-center gap-5 text-center rounded-md">
+           <div className='w-36 h-36 flex justify-center items-center overflow-hidden rounded-full'>
            <img src={ashik} alt={alumni.name} className="w-full h-auto" />
            </div>
-           <div className='my-5'>
-           <p className="text-lg font-semibold">{alumni.name}</p>
-            <p className="text-gray-500">{alumni.dept} {alumni.batch} Batch</p>
-            <p className="text-gray-500">{alumni.companyName}</p>
-            <p className="text-gray-500">{alumni.designation}</p>
+           <div className='text-white text-left'>
+           <p className=" font-bold">{alumni.name}</p>
+            <p className="text-primary">{alumni.dept} {alumni.batch} Batch</p>
+            <p className="text-gray-400">{alumni.companyName}</p>
+            <p className="text-gray-400 text-sm">{alumni.designation}</p>
            </div>
           </div>
         ))}

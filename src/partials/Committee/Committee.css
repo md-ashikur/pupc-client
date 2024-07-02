@@ -1,0 +1,10 @@
+.committee-bg{
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+.committee-card{
+    background-color:#99d3ff;
+    background-image:
+    radial-gradient(at 95% 23%, hsla(167,93%,64%,1) 0px, transparent 50%),
+    radial-gradient(at 95% 17%, hsla(87,98%,78%,1) 0px, transparent 50%),
+    radial-gradient(at 51% 51%, hsla(217,88%,71%,1) 0px, transparent 50%);
+}
