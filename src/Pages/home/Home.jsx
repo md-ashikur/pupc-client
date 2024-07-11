@@ -1,4 +1,5 @@
 import HomeHeader from "../../partials/home/HomeHeader";
+import Members from "../../partials/home/Members";
 import Mission from "../../partials/home/Mission";
 
 
@@ -7,6 +8,8 @@ const Home = () => {
         <div>
            <HomeHeader/>
            <Mission/>
+
+           <Members/>
         </div>
     );
 };

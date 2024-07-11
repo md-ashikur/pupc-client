@@ -36,6 +36,10 @@ const HomeHeader = () => {
         <SwiperSlide><img src={banner4} alt=""/></SwiperSlide>
        
       </Swiper>
+
+      <div className="grid grid-cols-3 gap-5">
+        <div></div>
+      </div>
         </div>
     );
 };

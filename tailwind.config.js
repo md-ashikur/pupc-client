@@ -28,6 +28,7 @@ export default {
         },
         white: {
           100: "#F8F6FD",
+          200: "#F8F9FA",
           DEFAULT:"#fff"
         },
       },
