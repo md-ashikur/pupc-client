@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { FaBars, FaPhoneVolume, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { FaCaretDown } from "react-icons/fa";
 import pupc from "../../images/pupc.png";
 import { NavLink } from 'react-router-dom';
 import "./Navbar.css"
-import { MdOutlineAlternateEmail } from 'react-icons/md';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,14 +24,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className='sticky top-0 w-full z-50'>
-      {/* Subnav with contact info */}
-      <div className="bg-gray-800 text-white py-1">
-        <div className="container mx-auto flex justify-between items-center lg:flex-row flex-col px-4">
-          <span className='flex items-center gap-2'><FaPhoneVolume /> (123) 456-7890</span>
-          <span className='flex items-center gap-2'><MdOutlineAlternateEmail /> programmingclub.pub@gmail.com</span>
-        </div>
-      </div>
+    <div className='fixed top-0 w-full z-50'>
+   
+    
 
       {/* Main nav */}
       <nav className="bg-[#0A0A13] shadow">
@@ -39,7 +34,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center justify-around">
               <div className="flex-shrink-0 ">
-                <img className="h-auto w-16" src={pupc} alt="Logo" />
+                <img className="h-auto w-12" src={pupc} alt="Logo" />
               </div>
               <div className="hidden md:flex md:ml-10 space-x-4">
                 <NavLink to="/" className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-gray-900">Home</NavLink>

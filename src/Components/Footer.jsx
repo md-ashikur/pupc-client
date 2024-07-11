@@ -2,7 +2,7 @@ import { ImLocation2 } from "react-icons/im";
 import pupc from "../images/pupc.png";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaPhoneVolume } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -77,6 +77,7 @@ const Footer = () => {
           >
             <MdMarkEmailUnread className="text-2xl " />programmingclub.pub@gmail.com
           </a>
+          <p className="mb-2 flex gap-3 items-center"><FaPhoneVolume className="text-2xl " /> (123) 456-7890</p>
           <a
             href="https://www.facebook.com/PUPCofficial"
             className="mt-2 flex gap-3 items-center"

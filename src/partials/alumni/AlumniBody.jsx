@@ -84,11 +84,11 @@ const AlumniBody = () => {
       <hr className='my-6 h-1' />
       <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
         {currentAlumni.map((alumni, index) => (
-          <div key={index} className="alumni-card p-2 flex  items-center gap-5 text-center rounded-md">
-           <div className='w-36 h-36 flex justify-center items-center overflow-hidden rounded-full'>
+          <div key={index} className="alumni-card p-2 grid grid-cols-5  items-center gap-5 text-center rounded-md">
+           <div className='w-36 h-36 col-span-2 flex justify-center items-center overflow-hidden rounded-full'>
            <img src={ashik} alt={alumni.name} className="w-full h-auto" />
            </div>
-           <div className='text-white text-left'>
+           <div className='text-white text-left col-span-3'>
            <p className=" font-bold">{alumni.name}</p>
             <p className="text-primary">{alumni.dept} {alumni.batch} Batch</p>
             <p className="text-gray-400">{alumni.companyName}</p>

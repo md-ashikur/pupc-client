@@ -6,10 +6,12 @@ export default {
       colors: {
         primary: {
           500: "#f1472d",
+          100: "#F6B17A",
           DEFAULT: "#EB715D",
         },
         secondary: {
-          DEFAULT: "#604CC3",
+          DEFAULT: "#01294D",
+          100: "#F0F8FC",
           500: "#626687",
           700: "#1B1C57",
         },
@@ -24,7 +26,10 @@ export default {
           500: "#626687",
           700: "#F1F5F9",
         },
-        base: "#fff",
+        white: {
+          100: "#F8F6FD",
+          DEFAULT:"#fff"
+        },
       },
     },
   },
@@ -33,3 +38,6 @@ export default {
     themes: ["light"],
   },
 };
+
+// #01294D
+// #F0F8FC
