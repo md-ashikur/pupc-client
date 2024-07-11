@@ -18,9 +18,9 @@ const Contact = () => {
   return (
     <div className="bg-white py-20 lg:px-20 px-5">
 
-      <div className="grid lg:grid-cols-3 gap-5 my-10">
-        <div className="border flex gap-4 items-center lg:p-5 rounded-lg">
-          <div className="flex justify-center items-center text-4xl rounded-lg text-primary-100 bg-white-100 w-20 h-20">
+      <div className="grid lg:grid-cols-3 gap-5 w-full my-10">
+        <div className="border flex gap-4 items-center p-5 rounded-lg">
+          <div className="flex justify-center items-center lg:text-4xl text-3xl rounded-lg text-primary-100 bg-white-100 lg:w-20 w-10 h-10 lg:h-20 w-10 h-10">
           <MdOutlinePhoneInTalk />
           </div>
           <div className="col-span-2">
@@ -29,21 +29,21 @@ const Contact = () => {
           </div>
 
         </div>
-        <div className="border flex gap-4 items-center lg:p-5 rounded-lg">
-          <div className="flex justify-center items-center text-4xl rounded-lg text-primary-100 bg-white-100 w-20 h-20">
+        <div className="border flex gap-4 items-center p-5 rounded-lg">
+          <div className="flex justify-center items-center lg:text-4xl text-3xl rounded-lg text-primary-100 bg-white-100 lg:w-20 w-10 h-10 lg:h-20 w-10 h-10">
           <HiOutlineMail />
           </div>
-          <div className="col-span-2">
-            <h3 className="font-semibold ">Email</h3>
-            <p className="">programmingclub.pub@gmail.com</p>
+          <div >
+            <h3 className="font-semibold">Email</h3>
+            <p className="text-wrap">programmingclub.pub@gmail.com</p>
           </div>
 
         </div>
-        <div className="border flex gap-4 items-center lg:p-5 rounded-lg">
-          <div className="flex justify-center items-center text-4xl rounded-lg text-primary-100 bg-white-100 !w-[80px] !h-[80px]">
+        <div className="border flex gap-4 items-center p-5 rounded-lg">
+          <div className="flex justify-center items-center lg:text-4xl text-3xl rounded-lg text-primary-100 bg-white-100 lg:w-20 w-10 h-10 lg:h-20 w-10 h-10">
           <MdOutlineShareLocation />
           </div>
-          <div className="col-span-2">
+          <div >
             <h3 className="font-semibold ">Address</h3>
             <p >Gokul, Bogura-5800, Bangladesh</p>
           </div>
