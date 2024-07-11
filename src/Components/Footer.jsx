@@ -1,18 +1,22 @@
 import { ImLocation2 } from "react-icons/im";
 import pupc from "../images/pupc.png";
-import { MdMarkEmailUnread } from "react-icons/md";
+import { MdMarkEmailUnread, MdOutlinePhoneInTalk } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaPhoneVolume } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className=" text-white py-10">
+    <div className=" text-secondary bg-white-100 py-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-5">
         {/* First Column */}
-        <div className="flex flex-col items-center">
-          <img src={pupc} alt="Logo" className="w-28 mb-4" />
+        <div className="flex flex-col">
+         <div className="flex gap-3">
+         <img src={pupc} alt="Logo" className="w-16 mb-4" />
+         <Link to="/" className="text-2xl uppercase font-bold text-secondary">Pundra University programming club</Link>
+        
+         </div>
           <p className="mb-4">
           PUPC is the most established and dynamic club of our University. We come together to explore all areas of Computer Science. Join us to learn more and be a part of our journey.
           </p>
@@ -71,13 +75,13 @@ const Footer = () => {
             <ImLocation2 className="text-2xl " />Rangpur Road, Baghopara,
             Gokul, Bogura-5800, Bangladesh
           </p>
-          <a
-            href="mailto:programmingclub.pub@gmail.com"
+          <p
+           
             className="mb-2 flex gap-3 items-center"
           >
             <MdMarkEmailUnread className="text-2xl " />programmingclub.pub@gmail.com
-          </a>
-          <p className="mb-2 flex gap-3 items-center"><FaPhoneVolume className="text-2xl " /> (123) 456-7890</p>
+          </p>
+          <p className="mb-2 flex gap-3 items-center"><MdOutlinePhoneInTalk className="text-2xl " /> (123) 456-7890</p>
           <a
             href="https://www.facebook.com/PUPCofficial"
             className="mt-2 flex gap-3 items-center"

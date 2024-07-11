@@ -72,7 +72,7 @@ const AlumniBody = () => {
   };
 
   return (
-    <div className="lg:mx-20 mx-5 py-8">
+    <div className="lg:mx-20 mx-5 py-20">
       <h1 className="text-2xl font-bold mb-4 text-white text-center">Our Alumni</h1>
       <input
         type="text"
@@ -88,7 +88,7 @@ const AlumniBody = () => {
            <div className='w-36 h-36 col-span-2 flex justify-center items-center overflow-hidden rounded-full'>
            <img src={ashik} alt={alumni.name} className="w-full h-auto" />
            </div>
-           <div className='text-white text-left col-span-3'>
+           <div className='text-secondary p-3 text-left col-span-3'>
            <p className=" font-bold">{alumni.name}</p>
             <p className="text-primary">{alumni.dept} {alumni.batch} Batch</p>
             <p className="text-gray-400">{alumni.companyName}</p>

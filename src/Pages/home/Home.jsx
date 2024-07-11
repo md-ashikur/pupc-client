@@ -1,10 +1,12 @@
 import HomeHeader from "../../partials/home/HomeHeader";
+import Mission from "../../partials/home/Mission";
 
 
 const Home = () => {
     return (
-        <div className="h-screen">
+        <div>
            <HomeHeader/>
+           <Mission/>
         </div>
     );
 };

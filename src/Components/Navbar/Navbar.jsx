@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { FaCaretDown } from "react-icons/fa";
 import pupc from "../../images/pupc.png";
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import "./Navbar.css"
 
 
@@ -34,7 +34,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center justify-around">
               <div className="flex-shrink-0 ">
-                <img className="h-auto w-12" src={pupc} alt="Logo" />
+               <Link to="/"> <img className="h-auto w-12" src={pupc} alt="Logo" /></Link>
               </div>
               <div className="hidden md:flex md:ml-10 space-x-4">
                 <NavLink to="/" className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-gray-900">Home</NavLink>

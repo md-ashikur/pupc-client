@@ -25,17 +25,15 @@ const HomeHeader = () => {
             delay: 2500,
             disableOnInteraction: false,
           }}
-        pagination={{
-          clickable: true,
-        }}
+       
         navigation={true}
         modules={[Autoplay,Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper lg:h-[100vh] h-[40vh] w-full"
       >
-        <SwiperSlide><img src={banner1} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={banner2} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={banner3} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={banner4} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={banner1} alt=""/></SwiperSlide>
+        <SwiperSlide><img src={banner2} alt=""/></SwiperSlide>
+        <SwiperSlide><img src={banner3} alt=""/></SwiperSlide>
+        <SwiperSlide><img src={banner4} alt=""/></SwiperSlide>
        
       </Swiper>
         </div>
