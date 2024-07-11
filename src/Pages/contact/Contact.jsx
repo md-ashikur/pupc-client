@@ -19,7 +19,7 @@ const Contact = () => {
     <div className="bg-white py-20 lg:px-20 px-5">
 
       <div className="grid lg:grid-cols-3 gap-5 my-10">
-        <div className="border flex gap-4 items-center p-5 rounded-lg">
+        <div className="border flex gap-4 items-center lg:p-5 rounded-lg">
           <div className="flex justify-center items-center text-4xl rounded-lg text-primary-100 bg-white-100 w-20 h-20">
           <MdOutlinePhoneInTalk />
           </div>
@@ -29,7 +29,7 @@ const Contact = () => {
           </div>
 
         </div>
-        <div className="border flex gap-4 items-center p-5 rounded-lg">
+        <div className="border flex gap-4 items-center lg:p-5 rounded-lg">
           <div className="flex justify-center items-center text-4xl rounded-lg text-primary-100 bg-white-100 w-20 h-20">
           <HiOutlineMail />
           </div>
@@ -39,7 +39,7 @@ const Contact = () => {
           </div>
 
         </div>
-        <div className="border flex gap-4 items-center p-5 rounded-lg">
+        <div className="border flex gap-4 items-center lg:p-5 rounded-lg">
           <div className="flex justify-center items-center text-4xl rounded-lg text-primary-100 bg-white-100 !w-[80px] !h-[80px]">
           <MdOutlineShareLocation />
           </div>
